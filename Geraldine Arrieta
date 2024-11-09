@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaca Caricaturesca</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #cce7ff;
+        }
+
+        .vaca {
+            position: relative;
+            width: 200px;
+            height: 140px;
+            background-color: #fff;
+            border-radius: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cabeza {
+            position: absolute;
+            top: -50px;
+            width: 80px;
+            height: 80px;
+            background-color: #fff;
+            border-radius: 30%;
+        }
+
+        .oreja {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: #333;
+            border-radius: 30%;
+        }
+        .oreja.izquierda {
+            top: -5px;
+            left: -20px;
+            transform: rotate(-30deg);
+        }
+        .oreja.derecha {
+            top: -5px;
+            right: -20px;
+            transform: rotate(30deg);
+        }
+
+        .ojo {
+            position: absolute;
+            top: 29px;
+            width: 10px;
+            height: 10px;
+            background-color: #333;
+            border-radius: 30%;
+        }
+        .ojo.izquierdo {
+            left: 20px;
+        }
+        .ojo.derecho {
+            right: 20px;
+        }
+
+        .hocico {
+            position: absolute;
+            bottom: 10px;
+            left: 15px;
+            width: 50px;
+            height: 30px;
+            background-color: #ffcc99;
+            border-radius: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .nariz {
+            width: 6px;
+            height: 10px;
+            background-color: #333;
+            border-radius: 30%;
+        }
+
+        .mancha {
+            position: absolute;
+            background-color: #333;
+            border-radius: 30%;
+        }
+        .mancha.uno {
+            width: 50px;
+            height: 40px;
+            top: 30px;
+            left: 20px;
+            transform: rotate(30deg);
+        }
+        .mancha.dos {
+            width: 40px;
+            height: 30px;
+            bottom: 80px;
+            right: 20px;
+            transform: rotate(250deg);
+        }
+        .mancha.tres {
+            width: 40px;
+            height: 30px;
+            bottom: 19px;
+            left: 30px;
+            transform: rotate(-30deg);
+        }
+        .mancha.cuatro {
+            width: 40px;
+            height: 30px;
+            bottom: 50px;
+            right: 75px;
+            transform: rotate(-10deg);
+        }
+        .mancha.cinco {
+            width: 50px;
+            height: 40px;
+            bottom: 20px;
+            right: 20px;
+            transform: rotate(30deg);
+        }
+
+        .brazo, .pierna {
+            position: absolute;
+            width: 20px;
+            height: 60px;
+            background-color: #333;
+            border-radius: 8px;
+        }
+        .brazo.izquierda {
+            top: 30px;
+            left: -20px;
+            transform: rotate(30deg);
+        }
+        .brazo.derecha {
+            top: 30px;
+            right: -20px;
+            transform: rotate(-30deg);
+        }
+        .pierna.izquierda {
+            bottom: -56px;
+            left: 40px;
+        }
+        .pierna.derecha {
+            bottom: -56px;
+            right: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="vaca">
+        <div class="brazo izquierda"></div>
+        <div class="brazo derecha"></div>
+        <div class="cabeza">
+            <div class="oreja izquierda"></div>
+            <div class="oreja derecha"></div>
+            <div class="ojo izquierdo"></div>
+            <div class="ojo derecho"></div>
+            <div class="hocico">
+                <div class="nariz"></div>
+                <div class="nariz"></div>
+            </div>
+        </div>
+        <div class="mancha uno"></div>
+        <div class="mancha dos"></div>
+        <div class="mancha tres"></div>
+        <div class="mancha cuatro"></div>
+        <div class="mancha cinco"></div>
+        <div class="pierna izquierda"></div>
+        <div class="pierna derecha"></div>
+    </div>
+</body>
+</html>
